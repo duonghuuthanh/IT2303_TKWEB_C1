@@ -7,6 +7,9 @@
     <title>eCommerce Website</title>
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/script.js"></script>
+    <script src="js/script2.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/script3.js"></script>
 </head>
 <body>
     <header>
@@ -21,41 +24,70 @@
         </nav>
     </header>
     <main>
-        <input type="search" placeholder="Tìm sản phẩm..." />
+        <section class="slider">
+            <div><img src="images/banner1.png" alt=""></div>
+            <div><img src="images/banner2.png" alt=""></div>
+            <div><img src="images/banner3.png" alt=""></div>
+        </section>
+        <section>
+            <ul class="tab flex">
+                <li class="active"><a href="#tab01">TAB 01</a></li>
+                <li><a href="#tab02">TAB 02</a></li>
+                <li><a href="#tab03">TAB 03</a></li>
+            </ul>
+
+            <div class="tab-content">
+                <div id="tab01">
+                    <input class="input-form" type="search" placeholder="Tìm sản phẩm..." />
+        <a href="#" class="insert">&RightArrow; Thêm sản phẩm</a>
+
+        <section class="form">
+            <input type="text" id="name" placeholder="Tên sản phẩm" class="input-form" />
+            <input type="number" id="price" placeholder="Giá sản phẩm" class="input-form" />
+            <input type="text" id="image" placeholder="Ảnh sản phẩm" value="images/phone.png" class="input-form" />
+            <button class="btn">Thêm sản phẩm</button>
+        </section>
+
         <section class="products flex">
+
             <div class="product">
                 <div>
                     <img src="images/phone.png" alt="Phone" />
-                    <h2>iPhone 15 Pro Max</h2>
+                    <h2><a href="#" class="title">iPhone 15 Pro Max</a></h2>
                     <div class="price">29.000.000<sup>đ</sup></div>
+                    <a href="#" class="close">&times;</a>
                 </div>
             </div>
             <div class="product">
                 <div>
                     <img src="images/phone.png" alt="Phone" />
-                    <h2>Galaxy S23 Ultra</h2>
+                    <h2><a href="#" class="title">Galaxy S23 Ultra</a></h2>
                     <div class="price">29.000.000<sup>đ</sup></div>
+                    <a href="#" class="close">&times;</a>
                 </div>
             </div>
             <div class="product">
                 <div>
                     <img src="images/phone.png" alt="Phone" />
-                    <h2>iPad Pro M4</h2>
+                    <h2><a href="#" class="title">iPad Pro M4</a></h2>
                     <div class="price">29.000.000<sup>đ</sup></div>
+                    <a href="#" class="close">&times;</a>
                 </div>
             </div>
             <div class="product">
                 <div>
                     <img src="images/phone.png" alt="Phone" />
-                    <h2>iPad Mini M2</h2>
+                    <h2><a href="#" class="title">iPad Mini M2</a></h2>
                     <div class="price">29.000.000<sup>đ</sup></div>
+                    <a href="#" class="close">&times;</a>
                 </div>
             </div>
             <div class="product">
                 <div>
                     <img src="images/phone.png" alt="Phone" />
-                    <h2>Galaxy Tab S9</h2>
+                    <h2><a href="#" class="title">Galaxy Tab S9</a></h2>
                     <div class="price">29.000.000<sup>đ</sup></div>
+                    <a href="#" class="close">&times;</a>
                 </div>
             </div>
         </section>
@@ -100,6 +132,17 @@
 
             </div>
         </section>
+                </div>
+                <div id="tab02">
+                    <h1>TAB CONTENT 02</h1>
+                </div>
+                <div id="tab03">
+                    <h1>TAB CONTENT 03</h1>
+                </div>
+            </div>
+        </section>
+
+        
     </main>
     <footer>
         eCommerce Website &copy; 2024

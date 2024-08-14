@@ -106,9 +106,93 @@ footer {
     color: white;
 }
 
-input[type=search] {
+.input-form {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
     border: 1px solid blue;
+    box-sizing: border-box;
+}
+
+a.close {
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    color: darkblue;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+a.insert {
+    margin-top: 5px;
+    display: block;
+    text-decoration: none;
+    color: darkblue;
+}
+
+.btn {
+    background-color: darkblue;
+    color: white;
+    border: 1px solid blue;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.show {
+    display: block !important;
+}
+
+.title {
+    color: gold;
+    text-decoration: none;
+}
+
+/* CSS TAB */
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+}
+
+ul.tab > li {
+    margin-right: 5px;
+}
+
+ul.tab > li > a {
+    display: block;
+    padding: 1.5rem;
+    background-color: antiquewhite;
+    text-decoration: none;
+    color: darkblue;
+    font-weight: bold;
+}
+
+.tab-content {
+    background-color: antiquewhite;
+}
+
+.tab-content h1 {
+    margin: 0;
+    padding: 10px;
+}
+
+.active {
+    box-shadow: 3px 2px gold;
+}
+
+.slider {
+    position: relative;
+}
+
+.slider > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.slider img {
+    width: 100%;
 }
